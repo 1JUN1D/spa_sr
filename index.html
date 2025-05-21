@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR BELLEZA ESENCIAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5JY6F8R5XZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5JY6F8R5XZ');
+</script>
+<link rel="icon" href="../favicon.png" type="image/png">
+<!-- Meta Pixel Code - Versión Optimizada -->
+<script>
+window._fbPixelHasLoaded = window._fbPixelHasLoaded || false;
+
+if (!window._fbPixelHasLoaded) {
+  window._fbPixelHasLoaded = true;
+  
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  
+  fbq('init', '1211843443955295');
+  fbq('track', 'PageView');
+  
+  console.log('Meta Pixel initialized with ID:', '1211843443955295');
+}
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1211843443955295&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">SR <span>BELLEZA</span> ESENCIAL</a>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Belleza y bienestar en un solo lugar</h1>
+            <p>Descubre una experiencia única en SR BELLEZA ESENCIAL. Nuestros servicios profesionales te brindarán la atención que mereces.</p>
+            <a href="#servicios" class="btn">Ver servicios</a>
+        </div>
+        <div class="hero-image">
+            <!-- Aquí irá la imagen PNG de la dueña -->
+            <img src="../logo.png" alt="Dueña de SR BELLEZA ESENCIAL">
+        </div>
+    </section>
+
+<!-- Video Carousel -->
+<section class="video-carousel">
+    <h2 class="section-title">Nuestros Trabajos</h2>
+    <div class="carousel-container">
+        <div class="carousel" id="videoCarousel">
+            <!-- Los elementos del carrusel se generarán dinámicamente con JavaScript -->
+        </div>
+        <div class="carousel-nav">
+            <button class="carousel-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section Updated -->
+<section id="servicios" class="services">
+    <h2 class="section-title">Nuestros Servicios</h2>
+    
+    <div class="service-tabs">
+        <button class="tab-btn active" data-category="todos" onclick="fbq('trackCustom', 'FilterClick', {filter: 'todos'});">Todos</button>
+        <button class="tab-btn" data-category="manicure" onclick="fbq('trackCustom', 'FilterClick', {filter: 'manicure'});">Manicure</button>
+        <button class="tab-btn" data-category="pedicure" onclick="fbq('trackCustom', 'FilterClick', {filter: 'pedicure'});">Pedicure</button>
+        <button class="tab-btn" data-category="peinados" onclick="fbq('trackCustom', 'FilterClick', {filter: 'peinados'});">Peinados</button>
+        <button class="tab-btn" data-category="maquillaje" onclick="fbq('trackCustom', 'FilterClick', {filter: 'maquillaje'});">Maquillaje</button>
+        <button class="tab-btn" data-category="pestanas" onclick="fbq('trackCustom', 'FilterClick', {filter: 'pestanas'});">Pestañas y Cejas</button>
+    </div>
+    
+    <div class="services-grid">
+        <!-- Servicio 1: Peinados -->
+        <div class="service-card" data-category="peinados">
+            <div class="service-image">
+                <img src="../imagenes/peinados.jpg" alt="Peinados" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Peinados</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 1 hora</p>
+                    <p><i class="fas fa-tag"></i> Precio: $60.000 (Desde)</p>
+                </div>
+                <p class="service-description">Duración y precio dependiendo de la complejidad a realizar.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Peinados" class="btn service-btn" onclick="fbqTrackServiceCategory('peinados', 'Peinados'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 2: Maquillaje -->
+        <div class="service-card" data-category="maquillaje">
+            <div class="service-image">
+                <img src="../imagenes/maquillaje.jpeg" alt="Maquillaje" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Maquillaje</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 1 hora</p>
+                    <p><i class="fas fa-tag"></i> Precio: $60.000 (Desde)</p>
+                </div>
+                <p class="service-description">Duración y precio dependiendo de la complejidad a realizar.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Maquillaje" class="btn service-btn" onclick="fbqTrackServiceCategory('maquillaje', 'Maquillaje'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 3: Base Ruber con Semipermanente -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/base_ruber_con_semipermanente.jpg" alt="Base Ruber con Semipermanente" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Base Ruber con Semipermanente</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $60.000</p>
+                </div>
+                <p class="service-description">Base protectora para tus uñas con acabado semipermanente.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Base%20Ruber%20con%20Semipermanente" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Base Ruber con Semipermanente'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 4: Manicure Tradicional -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/manicure_tradicional.jpg" alt="Manicure Tradicional" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Manicure Tradicional</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 45 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $22.000</p>
+                </div>
+                <p class="service-description">Cuidado completo para tus manos con esmaltado tradicional.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Manicure%20Tradicional" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Manicure Tradicional'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 5: Baño Acrílico Semipermanente -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/bano_acrilico_semipermanente.jpg" alt="Baño Acrílico Semipermanente" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Baño Acrílico Semipermanente</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $70.000</p>
+                </div>
+                <p class="service-description">Fortalecimiento y protección para tus uñas con acabado duradero.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Baño%20Acrílico%20Semipermanente" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Baño Acrílico Semipermanente'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 6: Forrado Acrílico Semipermanente -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/forrado_acrilico_Semipermanente.jpg" alt="Forrado Acrílico Semipermanente" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Forrado Acrílico Semipermanente</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $85.000</p>
+                </div>
+                <p class="service-description">Extensión y fortalecimiento de uñas con técnica acrílica.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Forrado%20Acrílico%20Semipermanente" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Forrado Acrílico Semipermanente'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 7: Retoque Acrílico Poly Gel o Forrado -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/retoque_Acrilico_poly_gel_o_forrado.jpg" alt="Retoque Acrílico Poly Gel o Forrado" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Retoque Acrílico Poly Gel o Forrado</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $85.000</p>
+                </div>
+                <p class="service-description">Mantenimiento y renovación de uñas acrílicas o poly gel.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Retoque%20Acrílico%20Poly%20Gel%20o%20Forrado" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Retoque Acrílico Poly Gel o Forrado'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 8: Retoque Press On -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/retoque_press_on.jpg" alt="Retoque Press On" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Retoque Press On</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $70.000</p>
+                </div>
+                <p class="service-description">Mantenimiento de uñas press on para lucir siempre impecables.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Retoque%20Press%20On" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Retoque Press On'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 9: Retiro Acrílico, Press On o Poly de otro lugar -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/retiro_acrilico.jpg" alt="Retiro Acrílico, Press On o Poly de otro lugar" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Retiro Acrílico, Press On o Poly de otro lugar</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $15.000</p>
+                </div>
+                <p class="service-description">Retiro profesional y cuidadoso de extensiones aplicadas en otros lugares.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Retiro%20Acrílico%2C%20Press%20On%20o%20Poly%20de%20otro%20lugar" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Retiro Acrílico, Press On o Poly de otro lugar'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 10: Decorado Normal por Uña -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/decoracion_normal_por_una.jpg" alt="Decorado Normal por Uña" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Decorado Normal por Uña</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 10 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $2.000</p>
+                </div>
+                <p class="service-description">Decoración básica para realzar la belleza de tus uñas.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Decorado%20Normal%20por%20Uña" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Decorado Normal por Uña'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 11: Decorado Dibujo -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/decorado_dibujo.jpg" alt="Decorado Dibujo" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Decorado Dibujo</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 10 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $5.000 (Desde)</p>
+                </div>
+                <p class="service-description">Desde $5.000; por cada uña con diseño personalizado.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Decorado%20Dibujo" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Decorado Dibujo'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 12: Decorado con Moños y Perlas -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/decorado_con_monos_y_perlas.jpg" alt="Decorado con Moños y Perlas" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Decorado con Moños y Perlas</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 10 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $5.000</p>
+                </div>
+                <p class="service-description">Decoración elegante con accesorios para ocasiones especiales.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Decorado%20con%20Moños%20y%20Perlas" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Decorado con Moños y Perlas'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 13: Manicure Tradicional - Hombre -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/manicure_tradicional_hombre.jpg" alt="Manicure Tradicional - Hombre" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Manicure Tradicional - Hombre</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $18.000</p>
+                </div>
+                <p class="service-description">Cuidado profesional de uñas para hombres.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Manicure%20Tradicional%20para%20Hombre" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Manicure Tradicional - Hombre'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 14: Manicure Semipermanente - Hombre -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/manicure_semipermanente_hombre.jpg" alt="Manicure Semipermanente - Hombre" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Manicure Semipermanente - Hombre</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $20.000</p>
+                </div>
+                <p class="service-description">Esmaltado semipermanente para hombres con mayor duración.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Manicure%20Semipermanente%20para%20Hombre" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Manicure Semipermanente - Hombre'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 15: Pedicure Tradicional - Hombre -->
+        <div class="service-card" data-category="pedicure">
+            <div class="service-image">
+                <img src="../imagenes/pedicure_tradicional_hombre.jpg" alt="Pedicure Tradicional - Hombre" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Pedicure Tradicional - Hombre</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $20.000</p>
+                </div>
+                <p class="service-description">Cuidado completo de pies para hombres.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Pedicure%20Tradicional%20para%20Hombre" class="btn service-btn" onclick="fbqTrackServiceCategory('pedicure', 'Pedicure Tradicional - Hombre'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 16: Pedicura Semipermanente - Hombre -->
+        <div class="service-card" data-category="pedicure">
+            <div class="service-image">
+                <img src="../imagenes/pedicura_semipermanente_hombre.jpg" alt="Pedicura Semipermanente - Hombre" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Pedicura Semipermanente - Hombre</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $25.000</p>
+                </div>
+                <p class="service-description">Esmaltado semipermanente en pies para hombres.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Pedicura%20Semipermanente%20para%20Hombre" class="btn service-btn" onclick="fbqTrackServiceCategory('pedicure', 'Pedicura Semipermanente - Hombre'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 17: Manicure Tradicional - Niños -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/manicure_tradicional_ninos.jpg" alt="Manicure Tradicional - Niños" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Manicure Tradicional - Niños</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $15.000</p>
+                </div>
+                <p class="service-description">Cuidado especializado de uñas para los más pequeños.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Manicure%20Tradicional%20para%20Niños" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Manicure Tradicional - Niños'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 18: Pedicure Tradicional - Niños -->
+        <div class="service-card" data-category="pedicure">
+            <div class="service-image">
+                <img src="../imagenes/pedicure_tradicional_nino.jpg" alt="Pedicure Tradicional - Niños" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Pedicure Tradicional - Niños</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $20.000</p>
+                </div>
+                <p class="service-description">Cuidado de pies para niños con productos suaves.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Pedicure%20Tradicional%20para%20Niños" class="btn service-btn" onclick="fbqTrackServiceCategory('pedicure', 'Pedicure Tradicional - Niños'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 19: Poly Gel Semipermanente -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/poly_gel_semipermanente.jpg" alt="Poly Gel Semipermanente" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Poly Gel Semipermanente</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 3 horas</p>
+                    <p><i class="fas fa-tag"></i> Precio: $110.000</p>
+                </div>
+                <p class="service-description">Técnica innovadora para extensiones de uñas naturales y resistentes.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Poly%20Gel%20Semipermanente" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Poly Gel Semipermanente'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 20: Press On -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/press_on.png" alt="Press On" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Press On</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 3 horas</p>
+                    <p><i class="fas fa-tag"></i> Precio: $90.000</p>
+                </div>
+                <p class="service-description">Uñas postizas de alta calidad que puedes aplicar fácilmente.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Press%20On" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Press On'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 21: Uñas Acrílicas Esculpidas Semipermanente hasta #3 -->
+        <div class="service-card" data-category="manicure">
+            <div class="service-image">
+                <img src="../imagenes/unas_Acrilicas_esculpidas_semipermanente.jpg" alt="Uñas Acrílicas Esculpidas Semipermanente hasta #3" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Uñas Acrílicas Esculpidas Semipermanente hasta #3</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 3 horas</p>
+                    <p><i class="fas fa-tag"></i> Precio: $110.000</p>
+                </div>
+                <p class="service-description">Esculpidas a mano para lograr la forma y longitud perfecta.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Uñas%20Acrílicas%20Esculpidas%20Semipermanente%20hasta%20%233" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Uñas Acrílicas Esculpidas Semipermanente'); return true;">Reservar</a>
+            </div>
+        </div>
+        
+        <!-- Servicio 22: Pedicure Tradicional -->
+        <div class="service-card" data-category="pedicure">
+            <div class="service-image">
+                <img src="../imagenes/pedicure_tradicional.jpg" alt="Pedicure Tradicional" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Pedicure Tradicional</h3>
+                <div class="service-details">
+                    <p><i class="far fa-clock"></i> Duración: 1 hora 30 minutos</p>
+                    <p><i class="fas fa-tag"></i> Precio: $25.000</p>
+                </div>
+                <p class="service-description">Tratamiento completo para pies con esmaltado tradicional.</p>
+                <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Pedicure%20Tradicional" class="btn service-btn" onclick="fbqTrackServiceCategory('pedicure', 'Pedicure Tradicional'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 23: Limpieza profunda pedicura -->
+       <div class="service-card" data-category="pedicure">
+           <div class="service-image">
+               <img src="../imagenes/limpieza_profunda_pedicura.jpg" alt="Limpieza profunda pedicura" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Limpieza profunda pedicura</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 35 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $30.000</p>
+               </div>
+               <p class="service-description">Exfoliación y limpieza profunda para pies saludables.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Limpieza%20profunda%20pedicura" class="btn service-btn" onclick="fbqTrackServiceCategory('pedicure', 'Limpieza profunda pedicura'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 24: Dibujo a mano alzada por uña diseño pequeño -->
+       <div class="service-card" data-category="manicure">
+           <div class="service-image">
+               <img src="../imagenes/dibujo_mano_alzada.png" alt="Dibujo a mano alzada por uña diseño pequeño" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Dibujo a mano alzada por uña diseño pequeño</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 5 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $2.000</p>
+               </div>
+               <p class="service-description">Diseños artísticos personalizados en cada uña.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Dibujo%20a%20mano%20alzada%20por%20uña%20diseño%20pequeño" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Dibujo a mano alzada por uña diseño pequeño'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 25: Pedrería o accesorios por uña -->
+       <div class="service-card" data-category="manicure">
+           <div class="service-image">
+               <img src="../imagenes/pedreria_o_accesorios.jpeg" alt="Pedrería o accesorios por uña" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Pedrería o accesorios por uña</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 5 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $5.000</p>
+               </div>
+               <p class="service-description">Decoración con piedras y accesorios para un look glamoroso.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Pedrería%20o%20accesorios%20por%20uña" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Pedrería o accesorios por uña'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 26: Pedicure Semipermanente -->
+       <div class="service-card" data-category="pedicure">
+           <div class="service-image">
+               <img src="../imagenes/pedicure_semipermanente.jpg" alt="Pedicure Semipermanente" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Pedicure Semipermanente</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 45 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $55.000</p>
+               </div>
+               <p class="service-description">Esmaltado de larga duración para pies perfectos.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Pedicure%20Semipermanente" class="btn service-btn" onclick="fbqTrackServiceCategory('pedicure', 'Pedicure Semipermanente'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 27: Semipermanente manos y pies -->
+       <div class="service-card" data-category="manicure pedicure">
+           <div class="service-image">
+               <img src="../imagenes/semipermnante_manos_pies.jpg" alt="Semipermanente manos y pies" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Semipermanente manos y pies</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 1 hora</p>
+                   <p><i class="fas fa-tag"></i> Precio: $100.000</p>
+               </div>
+               <p class="service-description">Tratamiento completo para manos y pies con esmaltado duradero.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Semipermanente%20manos%20y%20pies" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Semipermanente manos y pies'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 28: Limpieza profunda pedicura + uñas maquillada -->
+       <div class="service-card" data-category="pedicure">
+           <div class="service-image">
+               <img src="../imagenes/limpieza_prfunda_pedicura_unas_maquillada.jpg" alt="Limpieza profunda pedicura + uñas maquillada" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Limpieza profunda pedicura + uñas maquillada</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 1 hora</p>
+                   <p><i class="fas fa-tag"></i> Precio: $35.000</p>
+               </div>
+               <p class="service-description">Combinación de limpieza profunda y decoración artística.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Limpieza%20profunda%20pedicura%20%2B%20uñas%20maquillada" class="btn service-btn" onclick="fbqTrackServiceCategory('pedicure', 'Limpieza profunda pedicura + uñas maquillada'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 29: Cepillado Cabello -->
+       <div class="service-card" data-category="peinados">
+           <div class="service-image">
+               <img src="../imagenes/cepillado_Cabello.jpg" alt="Cepillado Cabello" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Cepillado Cabello</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $25.000</p>
+               </div>
+               <p class="service-description">Estilizado profesional para un cabello brillante y manejable.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Cepillado%20Cabello" class="btn service-btn" onclick="fbqTrackServiceCategory('peinados', 'Cepillado Cabello'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 30: Depilación con cuchilla y Henna -->
+       <div class="service-card" data-category="pestanas">
+           <div class="service-image">
+               <img src="../imagenes/depilacion_cuchilla_henna.jpg" alt="Depilación con cuchilla y Henna" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Depilación con cuchilla y Henna</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 20 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $25.000</p>
+               </div>
+               <p class="service-description">Depilación precisa con acabado natural con henna.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Depilación%20con%20cuchilla%20y%20Henna" class="btn service-btn" onclick="fbqTrackServiceCategory('pestanas', 'Depilación con cuchilla y Henna'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 31: Depilación Cuchilla Cejas -->
+       <div class="service-card" data-category="pestanas">
+           <div class="service-image">
+               <img src="../imagenes/depilacion_cuchilla.jpg" alt="Depilación Cuchilla Cejas" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Depilación Cuchilla Cejas</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 15 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $15.000</p>
+               </div>
+               <p class="service-description">Diseño de cejas con técnica de cuchilla para un look definido.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Depilación%20Cuchilla%20Cejas" class="btn service-btn" onclick="fbqTrackServiceCategory('pestanas', 'Depilación Cuchilla Cejas'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 32: Depilación Cera Cejas y Henna -->
+       <div class="service-card" data-category="pestanas">
+           <div class="service-image">
+               <img src="../imagenes/depilacion_Cera_Cejas_henna.jpg" alt="Depilación Cera Cejas y Henna" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Depilación Cera Cejas y Henna</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $30.000</p>
+               </div>
+               <p class="service-description">Diseño de cejas con cera y tinte natural con henna.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Depilación%20Cera%20Cejas%20y%20Henna" class="btn service-btn" onclick="fbqTrackServiceCategory('pestanas', 'Depilación Cera Cejas y Henna'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 33: Depilación Cejas con Cera -->
+       <div class="service-card" data-category="pestanas">
+           <div class="service-image">
+               <img src="../imagenes/depilacion_cejas_cera.png" alt="Depilación Cejas con Cera" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Depilación Cejas con Cera</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 15 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $18.000</p>
+               </div>
+               <p class="service-description">Diseño profesional de cejas con técnica de cera.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Depilación%20Cejas%20con%20Cera" class="btn service-btn" onclick="fbqTrackServiceCategory('pestanas', 'Depilación Cejas con Cera'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 34: Depilación Ceja y Bigote con Cera -->
+       <div class="service-card" data-category="pestanas">
+           <div class="service-image">
+               <img src="../imagenes/depilacion_ceja_y_bigote.jpeg" alt="Depilación Ceja y Bigote con Cera" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Depilación Ceja y Bigote con Cera</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 20 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $30.000</p>
+               </div>
+               <p class="service-description">Tratamiento completo para cejas y bigote con cera.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Depilación%20Ceja%20y%20Bigote%20con%20Cera" class="btn service-btn" onclick="fbqTrackServiceCategory('pestanas', 'Depilación Ceja y Bigote con Cera'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 35: Depilación de cejas henna y bigote -->
+       <div class="service-card" data-category="pestanas">
+           <div class="service-image">
+               <img src="../imagenes/depilacion_cejas_henna_bigote.jpg" alt="Depilación de cejas henna y bigote" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Depilación de cejas henna y bigote</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $35.000</p>
+               </div>
+               <p class="service-description">Diseño de cejas y bigote con henna para un look natural.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Depilación%20de%20cejas%20henna%20y%20bigote" class="btn service-btn" onclick="fbqTrackServiceCategory('pestanas', 'Depilación de cejas henna y bigote'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 36: Depilación de Bigote con Cera -->
+       <div class="service-card" data-category="pestanas">
+           <div class="service-image">
+               <img src="../imagenes/depilacion_De_bigote_con_cera.png" alt="Depilación de Bigote con Cera" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Depilación de Bigote con Cera</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 15 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $15.000</p>
+               </div>
+               <p class="service-description">Depilación precisa del bigote con técnica de cera.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Depilación%20de%20Bigote%20con%20Cera" class="btn service-btn" onclick="fbqTrackServiceCategory('pestanas', 'Depilación de Bigote con Cera'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 37: Pestañas Punto a Punto -->
+       <div class="service-card" data-category="pestanas">
+           <div class="service-image">
+               <img src="../imagenes/pestanas_punto_A_punto.jpg" alt="Pestañas Punto a Punto" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Pestañas Punto a Punto</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 20 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $30.000</p>
+               </div>
+               <p class="service-description">Extensión de pestañas con técnica profesional para mirada impactante.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Pestañas%20Punto%20a%20Punto" class="btn service-btn" onclick="fbqTrackServiceCategory('pestanas', 'Pestañas Punto a Punto'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 38: Volumen Ruso en Pestañas -->
+       <div class="service-card" data-category="pestanas">
+           <div class="service-image">
+               <img src="../imagenes/volumen_ruso_pestanas.jpg" alt="Volumen Ruso en Pestañas" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Volumen Ruso en Pestañas</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 20 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $35.000</p>
+               </div>
+               <p class="service-description">Técnica avanzada para pestañas con mayor volumen y definición.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Volumen%20Ruso%20en%20Pestañas" class="btn service-btn" onclick="fbqTrackServiceCategory('pestanas', 'Volumen Ruso en Pestañas'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 39: Trenzas peinado Infantiles -->
+       <div class="service-card" data-category="peinados">
+           <div class="service-image">
+               <img src="../imagenes/trenzas_peinados_infantiles.png" alt="Trenzas peinado Infantiles" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Trenzas peinado Infantiles</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 45 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $40.000</p>
+               </div>
+               <p class="service-description">Peinados creativos y divertidos para las más pequeñas.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Trenzas%20peinado%20Infantiles" class="btn service-btn" onclick="fbqTrackServiceCategory('peinados', 'Trenzas peinado Infantiles'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 40: Trenza Adultos -->
+       <div class="service-card" data-category="peinados">
+           <div class="service-image">
+               <img src="../imagenes/trenzas_Adultos.jpg" alt="Trenza Adultos" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Trenza Adultos</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 45 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $40.000</p>
+               </div>
+               <p class="service-description">Trenzas elegantes y sofisticadas para cualquier ocasión.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Trenza%20Adultos" class="btn service-btn" onclick="fbqTrackServiceCategory('peinados', 'Trenza Adultos'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 41: Peinados Para Toda Ocasión -->
+       <div class="service-card" data-category="peinados">
+           <div class="service-image">
+               <img src="../imagenes/peinados_para_toda_ocacion.jpg" alt="Peinados Para Toda Ocasión" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Peinados Para Toda Ocasión</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 45 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $60.000</p>
+               </div>
+               <p class="service-description">Estilizados profesionales para eventos especiales o diario.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Peinados%20Para%20Toda%20Ocasión" class="btn service-btn" onclick="fbqTrackServiceCategory('peinados', 'Peinados Para Toda Ocasión'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 42: Ondas -->
+       <div class="service-card" data-category="peinados">
+           <div class="service-image">
+               <img src="../imagenes/ondas.jpg" alt="Ondas" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Ondas</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 45 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $45.000</p>
+               </div>
+               <p class="service-description">Ondas naturales y elegantes para un look fresco.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Ondas" class="btn service-btn" onclick="fbqTrackServiceCategory('peinados', 'Ondas'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 43: Manicure Semipermanente (Frances o solo un tono) -->
+       <div class="service-card" data-category="manicure">
+           <div class="service-image">
+               <img src="../imagenes/manicure_semipermanente_frences_solo_un_tono.png" alt="Manicure Semipermanente (Frances o solo un tono)" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Manicure Semipermanente (Frances o solo un tono)</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $45.000</p>
+               </div>
+               <p class="service-description">Esmaltado duradero en estilo francés o color sólido.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Manicure%20Semipermanente%20(Frances%20o%20solo%20un%20tono)" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Manicure Semipermanente (Frances o solo un tono)'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 44: Manicure y Pedicure Semipermanente -->
+       <div class="service-card" data-category="manicure pedicure">
+           <div class="service-image">
+               <img src="../imagenes/manicure_y_pedicure_semipermanente.jpg" alt="Manicure y Pedicure Semipermanente" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+               <h3 class="service-title">Manicure y Pedicure Semipermanente</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 2 horas</p>
+                   <p><i class="fas fa-tag"></i> Precio: $100.000</p>
+               </div>
+               <p class="service-description">Tratamiento completo para manos y pies con esmaltado duradero.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Manicure%20y%20Pedicure%20Semipermanente" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Manicure y Pedicure Semipermanente'); return true;">Reservar</a>
+           </div>
+       </div>
+       
+       <!-- Servicio 45: Manicure Semipermanente - Decorado dos uñas -->
+       <div class="service-card" data-category="manicure">
+           <div class="service-image">
+               <img src="../imagenes/manicure_Semipermanente_decorado_dos_unas.png" alt="Manicure Semipermanente - Decorado dos uñas" style="width: 100%; height: 100%; object-fit: cover;">
+           </div>
+           <div class="service-content">
+            <h3 class="service-title">Manicure Semipermanente - Decorado dos uñas</h3>
+               <div class="service-details">
+                   <p><i class="far fa-clock"></i> Duración: 30 minutos</p>
+                   <p><i class="fas fa-tag"></i> Precio: $48.000</p>
+               </div>
+               <p class="service-description">Esmaltado semipermanente con decoración en dos uñas.</p>
+               <a href="https://wa.me/573022770343?text=Hola%20quiero%20agendar%20un%20servicio%20de%20Manicure%20Semipermanente%20-%20Decorado%20dos%20uñas" class="btn service-btn" onclick="fbqTrackServiceCategory('manicure', 'Manicure Semipermanente - Decorado dos uñas'); return true;">Reservar</a>
+           </div>
+       </div>
+   </div>
+</section>
+
+    <!-- Team Section -->
+    <section id="equipo" class="team">
+        <h2 class="section-title">Nuestro Equipo</h2>
+        <div class="team-grid">
+            <!-- Miembro 1: Paola Franco -->
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="../mujer.png" alt="Paola Franco">
+                </div>
+                <div class="team-content">
+                    <h3 class="team-name">Paola Franco</h3>
+                </div>
+            </div>
+            
+            <!-- Miembro 2: Natalia Rodriguez -->
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="../mujer.png" alt="Natalia Rodriguez">
+                </div>
+                <div class="team-content">
+                    <h3 class="team-name">Natalia Rodriguez</h3>
+
+                </div>
+            </div>
+            
+            <!-- Miembro 3: Sara Rizo -->
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="../mujer.png" alt="Sara Rizo">
+                </div>
+                <div class="team-content">
+                    <h3 class="team-name">Sara Rizo</h3>
+                </div>
+            </div>
+            
+            <!-- Miembro 4: Luisa Gomez -->
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="../mujer.png" alt="Luisa Gomez">
+                </div>
+                <div class="team-content">
+                    <h3 class="team-name">Luisa Gomez</h3>
+                </div>
+            </div>
+            
+            <!-- Miembro 5: Betsabe -->
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="../mujer.png" alt="Betsabe">
+                </div>
+                <div class="team-content">
+                    <h3 class="team-name">Betsabe</h3>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="horarios" class="schedule">
+        <h2 class="section-title">Horarios de Atención</h2>
+        <div class="schedule-container">
+            <div class="schedule-grid">
+                <!-- Domingo -->
+                <div class="schedule-item">
+                    <h3 class="schedule-day">Domingo</h3>
+                    <p class="schedule-hours">Cerrado</p>
+                </div>
+                
+                <!-- Lunes -->
+                <div class="schedule-item">
+                    <h3 class="schedule-day">Lunes</h3>
+                    <p class="schedule-hours">08:00 - 19:00</p>
+                </div>
+                
+                <!-- Martes -->
+                <div class="schedule-item">
+                    <h3 class="schedule-day">Martes</h3>
+                    <p class="schedule-hours">08:00 - 19:00</p>
+                </div>
+                
+                <!-- Miércoles -->
+                <div class="schedule-item">
+                    <h3 class="schedule-day">Miércoles</h3>
+                    <p class="schedule-hours">08:00 - 19:00</p>
+                </div>
+                
+                <!-- Jueves -->
+                <div class="schedule-item">
+                    <h3 class="schedule-day">Jueves</h3>
+                    <p class="schedule-hours">08:00 - 19:00</p>
+                </div>
+                
+                <!-- Viernes -->
+                <div class="schedule-item">
+                    <h3 class="schedule-day">Viernes</h3>
+                    <p class="schedule-hours">08:00 - 19:00</p>
+                </div>
+                
+                <!-- Sábado -->
+                <div class="schedule-item">
+                    <h3 class="schedule-day">Sábado</h3>
+                    <p class="schedule-hours">08:00 - 19:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Dirección</h3>
+                        <p>Calle 46E sur #39D-30 Barrio Trianon</p>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7859780590084!2d-75.59565872670562!3d6.159412193827762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46834dd3afa9db%3A0x6b8e55fa1968bf9e!2sSR%20Belleza%20Esencial%20%7C%20Spa%20en%20Envigado!5e0!3m2!1ses!2sco!4v1747828969957!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Teléfono</h3>
+                        <a href="tel:+573124274679">+57 312 427 4679</a>
+                        <a href="https://wa.me/573022770343">WhatsApp: +57 302 277 0343</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <a href="mailto:srbellezaesencial@gmail.com">srbellezaesencial@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Instagram</h3>
+                        <a href="https://instagram.com/srbellezaesencial" target="_blank">@srbellezaesencial</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre completo</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Teléfono</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-btn">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <a href="#" class="footer-logo">SR <span>BELLEZA</span> ESENCIAL</a>
+                <p class="footer-text">Ofrecemos servicios de belleza profesional con los más altos estándares de calidad y atención personalizada.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/srbellezaesencial" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/573022770343"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3 class="footer-heading">Enlaces rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3 class="footer-heading">Contacto</h3>
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Edificio Cano, Medellín, Colombia</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+57 312 427 4679</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>srbellezaesencial@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 SR BELLEZA ESENCIAL. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+ <script>
+        // Filtrado de servicios
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const serviceCards = document.querySelectorAll('.service-card');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remover clase active de todos los botones
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    // Agregar clase active al botón clickeado
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    // Filtrar servicios
+                    serviceCards.forEach(card => {
+                        const cardCategories = card.getAttribute('data-category').split(' ');
+                        
+                        if (category === 'todos' || cardCategories.includes(category)) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Inicializar mostrando todos los servicios
+            document.querySelector('.tab-btn[data-category="todos"]').click();
+        });
+
+        // Resto del JavaScript se mantiene igual
+    </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Datos de videos (aquí puedes agregar tantos videos como quieras)
+    const videos = [
+        { src: "../videos/4.mp4", type: "video/mp4" },
+        { src: "../videos/5.mp4", type: "video/mp4" },
+        { src: "../videos/2.mp4", type: "video/mp4" },
+        { src: "../videos/6.mp4", type: "video/mp4" },
+        { src: "../videos/3.mp4", type: "video/mp4" },
+    ];
+    
+    // Referencia al contenedor del carrusel
+    const carousel = document.getElementById('videoCarousel');
+    
+    // Generar elementos del carrusel dinámicamente
+    videos.forEach((video, index) => {
+        const item = document.createElement('div');
+        item.className = 'carousel-item';
+        item.dataset.index = index;
+        
+        const videoElement = document.createElement('video');
+        videoElement.autoplay = true;
+        videoElement.muted = true;
+        videoElement.loop = true;
+        
+        const source = document.createElement('source');
+        source.src = video.src;
+        source.type = video.type;
+        
+        videoElement.appendChild(source);
+        item.appendChild(videoElement);
+        carousel.appendChild(item);
+    });
+    
+    // Seleccionar todos los elementos del carrusel después de crearlos
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
+    
+    // Función para actualizar la vista del carrusel
+    function updateCarousel() {
+        // Primero, remover todas las clases
+        carouselItems.forEach(item => {
+            item.classList.remove('prev', 'active', 'next');
+            item.style.display = 'none'; // Ocultar todos los elementos primero
+        });
+        
+        // Calcular índices anterior y siguiente con lógica circular
+        const prevIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+        const nextIndex = (currentIndex + 1) % carouselItems.length;
+        
+        // Asignar clases correspondientes
+        carouselItems[prevIndex].classList.add('prev');
+        carouselItems[currentIndex].classList.add('active');
+        carouselItems[nextIndex].classList.add('next');
+        
+        // Mostrar solo los tres elementos relevantes
+        carouselItems[prevIndex].style.display = 'block';
+        carouselItems[currentIndex].style.display = 'block';
+        carouselItems[nextIndex].style.display = 'block';
+    }
+    
+    // Botón anterior
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+        updateCarousel();
+    });
+    
+    // Botón siguiente
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % carouselItems.length;
+        updateCarousel();
+    });
+    
+    // Auto-rotación del carrusel (opcional, puedes comentar si no lo deseas)
+    const autoRotate = setInterval(() => {
+        currentIndex = (currentIndex + 1) % carouselItems.length;
+        updateCarousel();
+    }, 5000);
+    
+    // Pausar auto-rotación al pasar el mouse (opcional)
+    carousel.addEventListener('mouseenter', () => {
+        clearInterval(autoRotate);
+    });
+    
+    // Inicializar carrusel
+    updateCarousel();
+});
+</script>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // Video carousel functionality
+        const carousel = document.querySelector('.carousel');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 1;
+        
+        function updateCarousel() {
+            carouselItems.forEach((item, index) => {
+                item.classList.remove('prev', 'active', 'next');
+                
+                if (index === currentIndex - 1) {
+                    item.classList.add('prev');
+                } else if (index === currentIndex) {
+                    item.classList.add('active');
+                } else if (index === currentIndex + 1) {
+                    item.classList.add('next');
+                }
+            });
+        }
+        
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+            updateCarousel();
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % carouselItems.length;
+            updateCarousel();
+        });
+        
+        // Auto-rotate carousel
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % carouselItems.length;
+            updateCarousel();
+        }, 5000);
+        
+        // Initialize carousel
+        updateCarousel();
+    </script>
+</body>
+</html>
